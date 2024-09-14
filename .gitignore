@@ -32,4 +32,5 @@ images/
 .vscode/
 .idea/
 
+# ignore final report
 reporte_final.html
