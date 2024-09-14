@@ -25,42 +25,39 @@
 # Importar bibliotecas
 import pandas as pd
 import matplotlib.pyplot as plt
-from IPython.display import HTML
 from scipy import stats as st
-
-
 
 # %%
 # Importar Archivos para los dataframes
-df1= pd.read_csv("datasets/project_sql_result_01.csv")
-df2 = pd.read_csv("datasets/project_sql_result_04.csv")
-df3 = pd.read_csv("datasets/project_sql_result_07.csv")
+df1= pd.read_csv("../datasets/project_sql_result_01.csv")
+df2 = pd.read_csv("../datasets/project_sql_result_04.csv")
+df3 = pd.read_csv("../datasets/project_sql_result_07.csv")
 
 # %%
 # Estudiar los datos contenidos en los dataframe y verificar los tipos de datos
 
 # Primer dataframe
-display(HTML('<h1> Datos de compañias: '))
-display(df1.head())
-display(df1.info())
-display(HTML('<hr>'))
+print(('===== Datos de compañias ====='))
+print(df1.head())
+print(df1.info())
+print(('--------------------------------'))
 
 # Segundo Dataframe
-display(HTML('<h1> Datos de finalizacion de los viajes: '))
-display(df2.head())
-display(df2.info())
-display(HTML('<hr>'))
+print(('===== Datos de finalizacion de los viajes ====='))
+print(df2.head())
+print(df2.info())
+print(('--------------------------------'))
 
 # Tercer dataframe
-display(HTML('<h1> Datos de condiciones climaticas de los viajes: '))
-display(df3.head(10))
-display(df3.info())
+print(('===== Datos de condiciones climaticas de los viajes ====='))
+print(df3.head(10))
+print(df3.info())
 
 # %%
 # Identificar los 10 barrios principales en termino de finalizacion
 top_10_dropoff = df2.sort_values(by = 'average_trips' ,ascending=False).head(10)
-display(HTML('<H2> Los principales 10 barrios en terminos de finalizacion del recorrido:'))
-display(top_10_dropoff)
+print(('==== Los principales 10 barrios en terminos de finalizacion del recorrido ===='))
+print(top_10_dropoff)
 
 # %%
 # Grafico Empresas de taxi y numero de viajes

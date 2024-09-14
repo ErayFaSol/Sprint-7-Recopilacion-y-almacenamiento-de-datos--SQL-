@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.dylib
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Data files
+*.csv
+*.json
+*.xlsx
+
+# Virtual Environment
+venv/
+env/
+*.env
+
+# Logs and other OS files
+*.log
+.DS_Store
+*.sqlite3
+*.log
+
+# Generated images
+images/
+
+# Ignore IDE/Editor specific files
+.vscode/
+.idea/
