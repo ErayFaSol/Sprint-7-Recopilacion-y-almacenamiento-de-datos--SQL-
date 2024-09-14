@@ -1,40 +1,40 @@
-# Proyecto 7: Recopilación y Almacenamiento de Datos - SQL
+# Proyecto 7: Análisis de Datos de Viajes en Taxi y Pruebas de Hipótesis
 
 ## Descripción del Proyecto
 
-Este proyecto se centra en la recopilación, manipulación y almacenamiento de datos utilizando SQL. A través de este sprint, se exploran técnicas para interactuar con bases de datos, desde la creación y modificación de tablas hasta la ejecución de consultas complejas que permiten extraer información valiosa de los datos.
+Este proyecto tiene como objetivo analizar dos conjuntos de datos proporcionados por una empresa de taxis en Chicago. El análisis incluye la exploración de datos sobre la cantidad de viajes realizados por distintas empresas de taxis y la identificación de los barrios con mayor número de finalizaciones de viajes. Adicionalmente, se realiza una prueba de hipótesis sobre cómo el clima afecta la duración de los viajes en ciertas rutas.
 
-El objetivo principal es familiarizarse con las operaciones básicas y avanzadas de SQL, garantizando que los datos se almacenen de manera eficiente y se puedan recuperar rápidamente para su análisis.
+### Tecnologías Utilizadas
 
-## Instrucciones para Completar el Proyecto
+- Python
+- Pandas
+- Matplotlib
+- SciPy
 
-### Paso 1: Configuración de la Base de Datos
-- **Creación de Tablas**: Definir la estructura de las tablas, especificando tipos de datos y relaciones entre tablas.
-- **Importación de Datos**: Cargar datos en las tablas desde fuentes externas, asegurando la integridad y consistencia de los datos.
+## Objetivo
 
-### Paso 2: Manipulación de Datos
-- **Consultas Básicas**: Realizar consultas para seleccionar, filtrar y ordenar datos.
-- **Consultas Avanzadas**: Utilizar operaciones como `JOIN`, `GROUP BY`, y subconsultas para extraer información más compleja.
+- Analizar datos de viajes en taxi en Chicago
+- Generar visualizaciones para comprender el comportamiento de los viajes
+- Realizar una prueba de hipótesis sobre la duración de los viajes en función del clima
 
-### Paso 3: Optimización de Consultas
-- **Índices y Optimización**: Implementar índices y otras técnicas para mejorar la eficiencia de las consultas.
-- **Validación de Resultados**: Asegurar que las consultas devuelvan resultados precisos y relevantes.
+### Funcionalidades
 
-## Tecnologías Utilizadas
+- **Exploración de Datos (EDA):** Visualización de los principales barrios donde terminan los viajes y empresas con mayor número de viajes.
+- **Prueba de Hipótesis:** Se realiza una prueba de hipótesis para determinar si la duración promedio de los viajes cambia en días lluviosos.
 
-- **SQL**: Lenguaje utilizado para interactuar con la base de datos.
-- **SQLite/MySQL/PostgreSQL**: Gestor de bases de datos utilizado (ajustar según el que estés usando).
-- **Python (pandas, SQLAlchemy)**: Herramientas para interactuar con la base de datos desde Python.
-- **Jupyter Notebook**: Entorno utilizado para documentar y ejecutar las consultas SQL.
+## Instalación
 
-## Resultados
+1. Clonar este repositorio:
 
-Al final de este proyecto, se espera que los datos estén organizados de manera óptima en la base de datos, y que se hayan realizado consultas que permitan extraer información clave de manera eficiente. El notebook incluye todo el proceso, desde la creación de la base de datos hasta la ejecución de consultas avanzadas.
+2. Instalar las dependencias:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-## Conclusiones
+## Cómo Ejecutar
 
-Este proyecto proporciona una comprensión práctica de cómo utilizar SQL para recopilar, manipular y almacenar datos. A través de la implementación de técnicas avanzadas, se garantiza que los datos se gestionen de manera eficiente, lo que es crucial para cualquier proyecto de ciencia de datos.
+Para ejecutar el proyecto, simplemente corre el archivo `main.py`:
 
-## Autor
-
-- **Eduardo de Jesús Franco Solórzano**
+```bash
+python src/main.py
+```
